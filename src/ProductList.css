@@ -46,6 +46,7 @@ body {
     width: 100vw;
     align-items: center;
     justify-content: center;
+    padding: 30px
 }
 .product-list {
     display: flex;
@@ -58,7 +59,10 @@ body {
     align-items: center;
     justify-content: center;
 }
-
+.product-grid h1{
+    border-top: 3px solid;
+    border-bottom: 3px solid
+}
 /* Product Card */
 .product-card {
     flex: 0 0 calc(33.33% - 20px); /* Adjust width for 3 cards per row with 20px gap */
@@ -211,6 +215,11 @@ body {
     cursor: pointer;
   }
   
+    .product-button:disabled, .product-button:disabled:hover {
+        background-color: grey;
+    }
+
+
   .product-button:hover {
     background-color: #45a049;
   }
